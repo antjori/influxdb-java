@@ -1,6 +1,5 @@
 package org.influxdb;
 
-import java.net.URLConnection;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -132,6 +131,13 @@ public interface InfluxDB {
 	 * @param batchPoints
 	 */
 	public void write(final BatchPoints batchPoints);
+
+	/**
+	 * Writes a line (string) to the influxdb database.
+	 * 
+	 * @param line the line to be written
+	 */
+	public void write(final String line);
 
 	/**
 	 * Execute a query agains a database.

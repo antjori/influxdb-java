@@ -248,4 +248,13 @@ public class InfluxDBImpl implements InfluxDB {
 		okHttpClient.setWriteTimeout(writeTimeout, timeUnit);
 	}
 
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	public void write(String line) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
